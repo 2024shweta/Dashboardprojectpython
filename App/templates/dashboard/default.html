@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Selection Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .btn {
+            margin: 10px;
+            width: 200px; /* Fixed width for buttons */
+        }
+    </style>
+</head>
+<body>
+
+<div class="button-container">
+    <h1>Login as</h1>
+    <a href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="btn btn-danger">Admin Login</a>
+    <a href="{% url 'login' %}" class="btn btn-primary">User Login</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
